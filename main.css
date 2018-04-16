@@ -1,0 +1,212 @@
+/*
+  Jordan Stapinski (jstapins)
+  Personal Portfolio
+  App.css
+
+  Defines additional styling on top of Bulma CSS to be used.
+*/
+
+/* Defining global color options as variables */
+:root{
+  --teal: #6BBAA7;
+  --purple: #6C648B;
+  --off-grey: #B6A19E;
+  --off-yellow: #FBA100;
+}
+
+/* Defining the overall font family as Avenir */
+.App {
+  font-family: 'Avenir';
+}
+
+/* Provide some breathing room between the dropdown and content in coursework */
+.select {
+  margin-bottom: 50px;
+}
+
+/*
+  Force the card content to take the entire width of the card,
+  and give some space.
+*/
+.card {
+  margin-right: 1%;
+  margin-left: 1%;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+/* Give cards and their images a shadow for a better sense of realism */
+.card, .card-image{
+  box-shadow: 3px 3px 2px #222222;
+}
+
+/* Align card text to the center and reduce padding */
+.card-content {
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Remove bottom padding on card content and individual columns */
+.bottomless {
+  padding-bottom: 0;
+}
+
+/* Remove bottom from project name in modal */
+.pname {
+  margin-bottom: 0 !important;
+}
+
+.post-card {
+  margin-bottom: 10px !important;
+}
+
+/* Remove the grey background from the popup modals */
+.modal-background {
+  background-color: transparent !important;
+}
+
+/* Define a somewhat opaque image */
+.semi-opaque {
+  opacity: 0.4;
+}
+
+/* Position the modal card at certain points within the container */
+.modal-card {
+  position: absolute !important;
+  left: 29.5%;
+  top: 15%;
+}
+
+/* Change the animation of opening the modal */
+.modal {
+  -webkit-animation-duration: 0.5s;
+}
+
+.not-on-mobile {
+  display: none !important;
+}
+
+.only-on-mobile {
+  display: unset !important;
+}
+
+/* Specific positioning for leftmost modals */
+.mc-0, .mc-1, .mc-2, .mc-3 {
+  left: 2%;
+  top: 15%;
+  width: 90%;
+  height: 80%;
+}
+
+.navbar-end {
+  float: right;
+  padding-top: 1%;
+}
+
+.navbar-start {
+  display: inline-block;
+  width: 60%;
+  padding-left: 3%;
+  padding-top: 1%;
+}
+
+/* Make modal cards large and almost full-container */
+.wide {
+  left: 2%;
+  width: 90% !important;
+}
+
+.tall {
+  height: 70%;
+}
+
+@media screen and (min-width: 801px) {
+
+  /* Specific positioning for leftmost modals */
+  .mc-0 {
+    left: 0%;
+    top: 15%;
+    width: 60%;
+  }
+
+  /* Specific positioning for second-column modals */
+  .mc-1 {
+    left: 25.5%;
+    top: 15%;
+    width: 60%;
+  }
+
+  /* Specific positioning for third-column modals */
+  .mc-2 {
+    left: 15%;
+    top: 15%;
+    width: 60%;
+  }
+
+  /* Specific positioning for final-column modals */
+  .mc-3 {
+    left: 40.5%;
+    top: 15%;
+    width: 60%;
+  }
+
+  .not-on-mobile {
+    display: unset !important;
+  }
+
+  .only-on-mobile {
+    display: none !important;
+  }
+
+  .navbar-end {
+    display: unset;
+    float: unset;
+  }
+
+  .navbar-start {
+    display: unset;
+    width: unset;
+    padding-left: unset;
+    padding-top: unset;
+  }
+
+  .tall {
+    left: 2%;
+    height: 70%;
+  }
+}
+
+/* Moving modals to take more screen space */
+.full {
+  margin-top: -20%;
+}
+
+/* Move the navbar name text away from the top */
+.top-nav-link {
+  padding-top: 10px;
+  padding-right: 15px;
+}
+
+/* Make text teal in color */
+.is-teal-text {
+  color: var(--teal);
+}
+
+/* Change the navbar to be purple and sticky in front of content */
+.navbar {
+  background-color: var(--purple) !important;
+  z-index: 10;
+  font-family: 'Avenir';
+}
+
+/* Make text yellow */
+.is-deep-yellow {
+  color: var(--off-yellow);
+}
+
+/* Make text white */
+.is-white {
+  color: white;
+}
+
