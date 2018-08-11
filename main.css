@@ -8,8 +8,8 @@
 
 /* Defining global color options as variables */
 :root{
-  --teal: #6BBAA7;
-  --purple: #6C648B;
+  --teal: #1ED2F4;
+  --snow-white: #F4F5F6;
   --off-grey: #B6A19E;
   --off-yellow: #FBA100;
 }
@@ -195,7 +195,7 @@
 
 /* Change the navbar to be purple and sticky in front of content */
 .navbar {
-  background-color: var(--purple) !important;
+  background-color: black !important;
   z-index: 10;
   font-family: 'Avenir';
 }
